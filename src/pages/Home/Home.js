@@ -39,7 +39,7 @@ function App() {
             <a  href="https://mail.google.com" title="Send Email" target="_blank">
            <img src={email} alt="Email icon" />
           </a>
-          <a href="https://www.instagram.com/___anjaliiiie___?utm_source=qr&igsh=MW51OHAwZXRuNHJzcg==" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/?flo=true" target="_blank" rel="noopener noreferrer">
         <img src={instagram} alt="instagram"/>
         </a>
         </div>
