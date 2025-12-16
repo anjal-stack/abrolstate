@@ -1,0 +1,265 @@
+/* src/pages/Homeland/Homeland.css */
+
+.homeland-page {
+  text-align: center;
+}
+
+/* Header Bar */
+.header-bar {
+  background-color: #f5f5f5;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #202121;
+  color: #fff;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 17px;
+  opacity: 0.9;
+  height: 45px;  /* Optional: set fixed height for consistent sizing */
+  box-sizing: border-box;
+
+}
+
+.header-bar .contact-details span {
+  margin-right: 15px;
+}
+
+.header-bar .social-icons img {
+  width: 24px;
+  margin-left: 10px;
+}
+
+/* Main Header */
+.homeland-header {
+  background: url('../../assests/homeland 11.png') no-repeat center/cover;
+  color: #ffffff;
+  padding: 30px 40px;
+  display: flex;                /* ✅ Flexbox */
+  justify-content: space-between; /* ✅ Logo left, Nav right */
+  align-items: center;            /* ✅ Vertically centered */
+  height: 250px;
+}
+
+.homeland-logo {
+  display: flex;
+  align-items: left; 
+  margin-top: -156px;
+ 
+}
+
+.homeland-logo img {
+  height: 80px;
+  width: auto;
+  margin-right: 250px;
+  justify-content: flex-start;
+}
+
+.homeland-link{
+  font-size: 30px;
+  font-weight: 500;
+  color: #dcdcdc;
+  margin-right: 81px;
+  margin-left: 60px;
+  
+}
+.homeland-menu {
+ display: flex;
+ margin-top: -156px;
+  gap: 35px;
+  font-size: 24px;
+  list-style: none;
+  font-weight: 600;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.homeland-menu li {
+   cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fdfeff;
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.homeland-link:hover{
+  color: #0556f6;
+  text-decoration: underline;
+}
+
+
+/* 🌆 General Page Styling */
+.homeland-about,
+.sector-info {
+  background: #f9fafc;
+  padding: 60px 30px;
+  max-width: 1000px;
+  margin: 40px auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.homeland-about:hover,
+.sector-info:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
+}
+
+/* 🏢 Headings */
+.homeland-about h1,
+.sector-info h1 {
+  font-size: 32px;
+  color: #0a1f44;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.homeland-about h1:hover,
+.sector-info h1:hover {
+  color: #0056b3;
+}
+
+.homeland-about h1::after,
+.sector-info h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #007bff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+  transition: width 0.4s ease-in-out;
+}
+
+.homeland-about h1:hover::after,
+.sector-info h1:hover::after {
+  width: 80px;
+}
+
+/* 🏗️ Subheadings */
+.homeland-about h2,
+.sector-info h2 {
+  font-size: 24px;
+  color: #1a3a6e;
+  margin-top: 35px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
+  padding-left: 12px;
+  transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.homeland-about h2:hover,
+.sector-info h2:hover {
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* 📝 Paragraph */
+.homeland-about p,
+.sector-info p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+/* 🔹 Lists */
+.homeland-about ul,
+.sector-info ul {
+  list-style-type: none; /* explicitly none */
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.homeland-about ul li,
+.sector-info ul li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.homeland-about ul li::before,
+.sector-info ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 18px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.homeland-about ul li:hover,
+.sector-info ul li:hover {
+  color: #0056b3;
+  transform: translateX(3px);
+}
+
+.homeland-about ul li:hover::before,
+.sector-info ul li:hover::before {
+  transform: scale(1.3);
+  color: #0056b3;
+}
+
+/* ✨ Strong Highlight */
+.homeland-about ul li strong,
+.sector-info ul li strong {
+  color: #1a3a6e;
+}
+
+/* 🌍 Responsive Design */
+@media (max-width: 768px) {
+  .homeland-about,
+  .sector-info {
+    padding: 40px 20px;
+  }
+
+  .homeland-about h1,
+  .sector-info h1 {
+    font-size: 26px;
+  }
+
+  .homeland-about h2,
+  .sector-info h2 {
+    font-size: 20px;
+  }
+
+  .homeland-about ul li,
+  .sector-info ul li {
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.footer a {
+  color: #0556f6;
+  text-decoration: underline;
+}

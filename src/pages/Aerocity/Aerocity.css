@@ -1,0 +1,203 @@
+body, html, ul, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+}
+/* General Body */
+ body{
+  background-color: #fffefe;
+}
+.App {
+  text-align: center;
+}
+/* 🔹 Header Bar */
+.header-bar {
+  background-color: #2c3032;
+  color: #fff;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 17px;
+  opacity: 0.9;
+  height: 45px;  /* Optional: set fixed height for consistent sizing */
+  box-sizing: border-box;
+  
+}
+.contact-details span {
+  margin-right: 15px;
+}
+.email-info {
+  font-weight: 500;
+}
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.Aerocity-header {
+  background: url('../../assests/background11.png') no-repeat center/cover;
+  color: #ffffff;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: 250px;
+}
+.header-top {  
+  display: flex;
+  justify-content: space-between;   /* Logo left, nav right */
+  align-items: center;              /* Vertically center items */
+   gap: 20px;                /* Optional spacing */
+}
+.Aerocity-logo img {
+ height: 80px;
+  width: auto;
+  margin-right: 250px;
+  justify-content: flex-start;
+}
+.Aerocity-menu {
+  display: flex;
+  gap: 42px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  flex-wrap: wrap;
+  
+}
+
+.Aerocity-menu li {
+  cursor: pointer;
+  font-weight: 700;
+  transition: color 0.3s ease;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.Aerocity-link{
+  font-size: 30px;
+  font-weight: 500;
+  color: #dcdcdc;
+  margin-right: 81px;
+  margin-left: 60px;
+
+}
+
+.Aerocity-menu li:hover {
+  color: #035bff;
+  text-decoration: underline;
+}
+/* Special style for "Mohali" */
+.nav-item {
+  font-size: 20px;
+  font-weight: 500;
+  color: #080808;
+}
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .Aerocity-menu {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+}
+.aerocity-intro {
+  font-size: 19px;
+  line-height: 2;
+  text-align: justify;
+  padding: 50px 66px 0 66px;
+}
+.aerocity-info-section {
+  background-color: #f4f8fc;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+}
+.aerocity-info-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #003366;
+}
+.aerocity-info-section h3 {
+  font-size: 22px;
+  margin-top: 30px;
+  color: #004080;
+}
+.aerocity-info-section p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+.aerocity-key-list,
+.aerocity-benefits-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+.aerocity-key-list li,
+.aerocity-benefits-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+.aerocity-key-list li::before,
+.aerocity-benefits-list li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #2e86de;
+}
+.map-section  {
+  margin:30px 20px 20px 20px;
+  padding: 5px;
+  font-weight: 1000;
+  font-size: larger;
+  
+}
+.map-section h2{
+  font-weight: 1000;
+  font-size: 36px;
+}
+.map-container iframe{
+  margin-top: 10px;
+  padding: 15px 10px 10px 10px;
+  max-height: 300px;
+  max-width: 800px;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  background-color: #2c3032;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+  opacity: 0.9;
+  height: 35px;
+}
+.footer-link {
+  color: #06869a;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+.footer-link:hover {
+  color: #0e86c2;
+}
