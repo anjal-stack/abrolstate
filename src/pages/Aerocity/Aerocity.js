@@ -21,7 +21,7 @@ function About() {
             <img src={email} alt="Email icon" />
           </a>
           <a
-            href="https://www.instagram.com/___anjaliiiie___?utm_source=qr&igsh=MW51OHAwZXRuNHJzcg=="
+            href="https://www.instagram.com/?flo=true"
             target="_blank"
             rel="noopener noreferrer"
           >
